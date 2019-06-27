@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nampala Rahmah</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p class="prim">OR Sign up for our monthly news letter:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="img/kampala-city.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <!--form onsubmit="grim()"-->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="abc@you.com..">
+        <label for="country"><br>Country</label>
+        <select id="country" name="country">
+          <option value="uganda">Uganda</option>
+          <option value="kenya">Kenya</option>
+          <option value="tanzania">Tanzania</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" id="grim">
+      <!--/form-->
+    </div>
+    <div class="column">
+    	<h2>Search Contact</h2>
+    	<input type="text" name="searchPhrase">
+    	<input type="submit" value="Search" onclick="searchContacts()">
+    	<p>Results</p>
+    	<p id="result"></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
